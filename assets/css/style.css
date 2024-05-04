@@ -28,8 +28,11 @@ header {
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
-    width:100%;
-    box-shadow:0 2px 2px #3a3a3a;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -39,35 +42,50 @@ header a {
 
 h1 {
     font-family: "Oswald", sans-serif;
-    text-transform:uppercase;
+    text-transform: uppercase;
     letter-spacing: 2px;
-    color:#252525;
+    color: #252525;
 }
 
 #menu {
-    font-size:110%;
-    letter-spacing:4px;
-    list-style-type:none;
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
 }
 
 #menu li {
-    margin-bottom:1em;
+    margin-bottom: 1em;
 }
 
 .active {
-    border-bottom:1px solid #3a3a3a;
+    border-bottom: 1px solid #3a3a3a;
 }
 
 /*Navbar styles with dropdown*/
 
 nav {
-    position:absolute;
+    position: absolute;
     background-color: #FFFFFF;
-    width:100%;
-    left:0;
+    width: 100%;
+    left: 0;
     padding: 0 1rem;
-    box-shadow:0 2px 2px #3a3a3a;
+    box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    /*top is assigned so the nav does not obscure the heading when toggled on*/
+    top:100%;
+}
+
+/*Nav toggle*/
+#nav-toggle:checked~nav {
+    display:block;
+}
+
+#nav-toggle {
+    display:none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /*Main Content*/
