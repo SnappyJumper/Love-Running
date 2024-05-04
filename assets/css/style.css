@@ -93,6 +93,7 @@ main {
     background-color: lightblue;
     /*Makes the main element take up any surplus space on the page*/
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /*Footer*/
