@@ -1,9 +1,15 @@
+/*import for Oswald google font*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/*import for Lato Light 300 fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Oswald:wght@200..700&display=swap');
+
 /* asterix wildcard selector to overide default browser styles*/
 * {
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 /*General Styles*/
 body {
     min-height: 100vh;
@@ -11,19 +17,24 @@ body {
     flex-direction: column;
     /*Generic project styles*/
     color: #3a3a3a;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /*Header*/
 header {
-    background-color:lightcoral;
+    background-color: lightcoral;
 }
+
 /*Main Content*/
 main {
-    background-color:lightblue;
+    background-color: lightblue;
     /*Makes the main element take up any surplus space on the page*/
     flex: 1 0 auto;
 }
+
 /*Footer*/
 footer {
-    background-color:orange;
+    background-color: orange;
 }
