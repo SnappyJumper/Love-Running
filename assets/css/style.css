@@ -72,16 +72,16 @@ nav {
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     /*top is assigned so the nav does not obscure the heading when toggled on*/
-    top:100%;
+    top: 100%;
 }
 
 /*Nav toggle*/
 #nav-toggle:checked~nav {
-    display:block;
+    display: block;
 }
 
 #nav-toggle {
-    display:none;
+    display: none;
 }
 
 .nav-toggle-label {
@@ -97,23 +97,36 @@ main {
 }
 
 /*Footer*/
-footer {
-    background-color: orange;
+
+#social-networks {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
+
+#social-networks i {
+    font-size:"160%";
+    padding:5%;
+    color:#3a3a3a;
+}
+
 
 /*Media query for tablets or larger (768px and up)*/
 @media screen and (min-width: 768px) {
+
     /*Header*/
     nav {
-        display:block;
-        position:relative;
-        box-shadow:none;
-        width:fit-content;
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
         padding-right: 1rem;
     }
 
     #menu {
-        display:flex;
+        display: flex;
     }
 
     #menu li {
@@ -121,20 +134,21 @@ footer {
     }
 
     .nav-toggle-label {
-        display:none;
+        display: none;
     }
 
     #logo {
-        font-size:200%;
+        font-size: 200%;
         line-height: 75px;
-        margin:0 0.5rem;
+        margin: 0 0.5rem;
     }
 
-    
+
 }
 
 /*Media query for laptop screens and up*/
 @media screen and (min-width: 992px) {
+
     /*Header*/
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
