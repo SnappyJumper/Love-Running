@@ -22,6 +22,29 @@ body {
     font-style: normal;
 }
 
+h1, h2, h3 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+ #cover-text {
+    /*rbga value sets the colour and opacity*/
+    background-color:rgba(241, 109, 107, .7);
+    font-size:130%;
+    position:absolute;
+    bottom:30px;
+    width:80%;
+    min-height:200px;
+    padding-top:40px;
+    padding-left:10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color:#FFFFFF;
+}
+
 /*Header*/
 header {
     background-color: #FFFFFF;
@@ -40,12 +63,7 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
+
 
 #menu {
     font-size: 110%;
@@ -94,12 +112,16 @@ main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
+
 /*Hero Section*/
 #hero {
-    height:600px;
-    width:100%;
-    background:url("../images/hero-image.webp") no-repeat center center/cover;
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position:relative;
 }
+
+
 
 
 /*Footer*/
@@ -113,9 +135,9 @@ main {
 }
 
 #social-networks i {
-    font-size:"160%";
-    padding:5%;
-    color:#3a3a3a;
+    font-size: "160%";
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 
@@ -149,6 +171,10 @@ main {
         margin: 0 0.5rem;
     }
 
+    #cover-text {
+        width:300px;
+        right:50px;
+    }
 
 }
 
