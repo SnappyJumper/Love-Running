@@ -153,10 +153,10 @@ main {
 }
 
 #circle-cover-background {
-    position:relative;
+    position: relative;
     width: 90vw;
-    height:90vw;
-    margin-bottom:20px;
+    height: 90vw;
+    margin-bottom: 20px;
     background: url("../images/reasons-image.webp") no-repeat top center/cover;
     /*Makes the square image a circle*/
     border-radius: 50%;
@@ -165,7 +165,7 @@ main {
 }
 
 #benefits-image {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -225,6 +225,25 @@ main {
         right: 50px;
     }
 
+    /*Reasons Section*/
+
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 75%;
+    }
+
+    #benefits-mental>div {
+        text-align: end;
+        align-self: flex-end;
+    }
+
 }
 
 /*Media query for laptop screens and up*/
@@ -233,5 +252,35 @@ main {
     /*Header*/
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+}
+
+/*Media query for screens 1200px and up*/
+@media screen and (min-width: 1200px) {
+    #benefits {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #benefits-image {
+        order: 0;
+    }
+
+    #benefits>div {
+        flex: 1;
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental>div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical {
+        align-self: flex-end;
     }
 }
